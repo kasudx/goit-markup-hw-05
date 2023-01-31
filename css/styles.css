@@ -36,6 +36,7 @@ body {
   font-weight: 700;
   line-height: 1.19;
   text-decoration: none;
+  padding-top: 20px;
 }
 
 address {
@@ -59,12 +60,16 @@ header {
 .logo-and-nav-el {
   display: flex;
   list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .logo {
-  padding: 24px auto 25px 215px;
+  padding-top: 24px;
+  padding-right: auto;
+  padding-bottom: 25px;
+
   margin-right: 93px;
-  margin-top: 0;
 }
 
 .logo-footer {
@@ -77,14 +82,22 @@ header {
   margin-right: 45px;
 }
 
+.nav-elements {
+  margin-top: 0px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .nav-elements-a {
-  flex: display;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.17;
   text-decoration: none;
   color: #212121;
-  padding: 32px auto 32px auto;
+  padding-top: 32px;
+  padding-left: auto;
+  padding-bottom: 32px;
+  padding-right: auto;
 }
 
 .logo-and-nav-el {
@@ -95,9 +108,14 @@ header {
 .contacts {
   display: flex;
   align-items: center;
-  padding: 32px 227px 32px auto;
+  padding-top: 32px;
+
+  padding-bottom: 32px;
+  padding-left: auto;
   list-style: none;
   text-decoration: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .contact-data {
@@ -601,4 +619,34 @@ section {
 
 .portfolio-address {
   padding-left: 0px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: visible;
+  opacity: 0;
+}
+
+.logo-and-nav-el .nav-elements .agency:hover::after {
+  display: block;
+  content: "";
+  border-radius: 2px;
+  width: 53px;
+  height: 4px;
+  background-color: #2196f3;
+  margin-top: 28px;
+
+  position: absolute;
+}
+
+.logo-and-nav-el .nav-elements .portfolio:hover::after {
+  display: block;
+  content: "";
+  border-radius: 2px;
+  width: 53px;
+  height: 4px;
+  background-color: #2196f3;
+  margin-top: 28px;
+
+  position: absolute;
 }
